@@ -13,7 +13,7 @@ describe 'Hash of Hash (HoH)' do
           expect(starting_node[:sub_category][:sub_category][:sub_category][:label]).to eq("Order")
         end
 
-        it 'its fifth sub_category to have the label "Order"' do
+        it 'its fifth sub_category to have the label "Genus"' do
           starting_node = naming_system
           expect(starting_node[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Genus")
         end
