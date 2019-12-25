@@ -38,11 +38,13 @@ def naming_system
   family = {
     label: "Family",
     sub_category: {
-      label: "Genus", sub_category: species
+      label: "Genus",
+      sub_category: species
     }
   }
   order = {
-    label: "Order", sub_category: family
+    label: "Order",
+    sub_category: family
   }
   kingdom = {
     label: "Kingdom",
