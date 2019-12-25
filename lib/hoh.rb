@@ -31,49 +31,8 @@ PORTION_4 = {
 }
 
 def naming_system
-<<<<<<< HEAD
-  species = {
-    label: "Species",
-    sub_category: nil
-  }
-  family = {
-    label: "Family",
-    sub_category: {
-      label: "Genus",
-      sub_category: species
-    }
-  }
-  order = {
-    label: "Order",
-    sub_category: family
-  }
-=======
->>>>>>> 3a23859cad3e36fed2529eeaedd2f83c860634be
-  kingdom = {
-    label: "Kingdom",
-    sub_category: {
-      label: "Phylum",
-      sub_category: {
-<<<<<<< HEAD
-        label: "Class",
-        sub_category: order
-=======
-        label: "Class", sub_category: order
->>>>>>> 3a23859cad3e36fed2529eeaedd2f83c860634be
-      }
-    }
-  }
-  species = {
-    label: "Species",
-    sub_category: nil
-  }
-  family = {
-    label: "Family",
-    sub_category: {
-      label: "Genus", sub_category: species
-    }
-  }
-  order = {
-    label: "Order", sub_category: family
-  }
+  PORTION_3[:sub_category][:sub_category] = PORTION_4
+  PORTION_2[:sub_category] = PORTION_3
+  PORTION_1[:sub_category][:sub_category][:sub_category] = PORTION_2
+  PORTION_1
 end
